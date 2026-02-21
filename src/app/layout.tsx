@@ -13,7 +13,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shasbin.in"),
+  metadataBase: new URL("https://adhilunnikrishnan.in"),
   title: "Adhil Unnikrishnan P - Full Stack Developer | Backend Expert",
   description:
     "Portfolio of Adhil Unnikrishnan P, a Backend Developer from Irinjalakuda, Thrissur, India. Expert in Node.js, Express, React, Next.js, and scaling secure backend systems.",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com", // Recommendation: update this to your actual domain
+    url: "https://adhilunnikrishnan.in", // Recommendation: update this to your actual domain
     title: "Adhil Unnikrishnan P - Full Stack Developer Portfolio",
     description:
       "Explore the projects and skills of Adhil Unnikrishnan P. Specializing in scalable backend systems and modern frontend interfaces.",
@@ -106,11 +106,11 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Adhil Unnikrishnan P",
-              url: "https://your-domain.com",
+              url: "https://adhilunnikrishnan.in",
               jobTitle: "Backend Developer",
               description:
                 "Backend Developer specializing in Node.js, Express, and scalable backend architectures.",
-              image: "https://your-domain.com/profile-image.jpg",
+              image: "https://adhilunnikrishnan.in/profile-image.jpg",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Irinjalakuda, Thrissur",

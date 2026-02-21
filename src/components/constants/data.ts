@@ -25,14 +25,13 @@ export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/adhilunnikrishnan/",
   // twitter: "https://twitter.com/your-twitter",
   leetcode: "https://leetcode.com/u/adhilunnikrishnan/",
-  // peerlist: "https://peerlist.io/your-peerlist", // remove or keep blank if you don't have a Peerlist profile
   instagram: "",
   email: "mailto:adhilunnikrishnanofficial@gmail.com",
   // blog: "https://yourblog.com", // remove if you don't have a blog
   resume:
     "https://drive.google.com/file/d/1lf2eQpjK10k9CFMpI7HCLGmskxRb3hdT/view?usp=sharing",
   phone: "+91 7907933057",
-  whatsapp: "https://wa.me/ 7907933057",
+  whatsapp: "https://wa.me/+917907933057",
 };
 
 // Contact form endpoint (update with your own Formspree endpoint)
@@ -45,11 +44,11 @@ export const SKILLS = {
     "CSS",
     "JavaScript",
     "TypeScript",
-    // "React",
-    // "Next.js",
+    "React",
+    "Next.js",
     "Bootstrap",
   ],
-  backend: ["Node.js", "Express.js"],
+  backend: ["Node.js", "Express.js", "Nest.js", "GraphQL"],
   databases: ["MongoDB", "MySQL", "PostgreSQL", "Redis"],
   languages: [
     "JavaScript",
@@ -64,7 +63,6 @@ export const SKILLS = {
     "Postman",
     "Figma",
     "Jest",
-    "Windows",
   ],
 };
 
