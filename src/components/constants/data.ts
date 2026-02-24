@@ -10,7 +10,7 @@ export const ABOUT_ME = {
     "Hi, I’m Adhil Unnikrishnan P, a backend developer with a strong focus on building reliable, scalable, and secure server-side applications. I enjoy solving complex problems and turning ideas into efficient APIs and systems.",
     "I’m passionate about developing secure authentication flows, robust RESTful APIs, and intelligent data-driven applications. I enjoy crafting backend systems that are scalable, maintainable, and built with clean, modern architecture.",
   ],
-  profileImage: "/profile-image.png", // Replace with your profile image
+  profileImage: "/image.png", // Replace with your profile image
   profileGif: "/profile-gif.gif", // Replace with your personalised gif
 };
 
@@ -29,7 +29,7 @@ export const SOCIAL_LINKS = {
   email: "mailto:adhilunnikrishnanofficial@gmail.com",
   // blog: "https://yourblog.com", // remove if you don't have a blog
   resume:
-    "https://drive.google.com/file/d/1lf2eQpjK10k9CFMpI7HCLGmskxRb3hdT/view?usp=sharing",
+    "https://drive.google.com/file/d/1DqGeHeGeEs-pwrOneVTZotMnH-iUXpig/view?usp=drive_link",
   phone: "+91 7907933057",
   whatsapp: "https://wa.me/+917907933057",
 };
