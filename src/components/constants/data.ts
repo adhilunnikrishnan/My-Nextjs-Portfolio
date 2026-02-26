@@ -29,7 +29,7 @@ export const SOCIAL_LINKS = {
   email: "mailto:adhilunnikrishnanofficial@gmail.com",
   // blog: "https://yourblog.com", // remove if you don't have a blog
   resume:
-    "https://drive.google.com/file/d/1DqGeHeGeEs-pwrOneVTZotMnH-iUXpig/view?usp=drive_link",
+    "https://drive.google.com/file/d/1D4rKAjA6FZSOtt0g8Vs3W2ZltXEXLyWk/view?usp=drive_link",
   phone: "+91 7907933057",
   whatsapp: "https://wa.me/+917907933057",
 };
@@ -170,7 +170,7 @@ export const EXPERIENCE = [
     company: "G-Tec Computer Education",
     companyLink: "",
     role: "Full Stack Development Intern",
-    period: "Jul 2025 - Feb 2026 (Expected)",
+    period: "Jul 2025 - Mar 2026",
     location: "Onsite",
     description:
       "Working on full-stack development with a focus on backend engineering. Building secure RESTful APIs, implementing caching and session management with Redis, designing scalable architectures, and integrating relational and NoSQL databases. Gaining hands-on experience with containerization, API performance optimization, and modern JavaScript development workflows.",
