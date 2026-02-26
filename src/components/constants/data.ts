@@ -123,10 +123,31 @@ export const SKILLS = {
 export const PROJECTS = [
   {
     id: 1,
+    name: "Modern Portfolio",
+    category: "FRONTEND",
+    description:
+      "Crafted a responsive 9-section portfolio using Next.js 15, TypeScript, and Framer Motion with dark mode support.\nIntegrated GitHub and Leetcode APIs displaying 261+ solved problems and 64-day max streak.\nAchieved 90+ Lighthouse score via SEO, code splitting, and Open Graph meta tags.\nEnsured code quality with ESLint, Prettier, and Vercel Analytics.",
+    tech: [
+      "Node.js",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "TailwindCSS",
+      "Framer Motion",
+      "GitHub API",
+      "LeetCode API",
+    ],
+    link: "",
+    github: "https://github.com/adhilunnikrishnan/node-rest-api-typescript",
+    image: "/modern-portfolio.png",
+    color: "#3178C6",
+  },
+  {
+    id: 2,
     name: "node-rest-api-typescript",
     category: "BACKEND",
     description:
-      "**Problem:** Traditional APIs often suffer from performance bottlenecks and weak type safety.\n**Impact:** This leads to fragile codebases and poor developer experience.\n**Solution:** A scalable Node.js REST API built with TypeScript, featuring JWT-based authentication, MongoDB for data persistence, and Redis for caching. Dockerized for consistent deployment.",
+      "Traditional APIs often suffer from performance bottlenecks and weak type safety.\nThis leads to fragile codebases and poor developer experience.\nA scalable Node.js REST API built with TypeScript, featuring JWT-based authentication, MongoDB for data persistence, and Redis for caching. Dockerized for consistent deployment.",
     tech: [
       "Node.js",
       "TypeScript",
@@ -144,9 +165,9 @@ export const PROJECTS = [
   {
     id: 2,
     name: "Moonlight-Reads-Ecommerce-WebApp",
-    category: "E-COMMERCE",
+    category: "Full Stack",
     description:
-      "**Problem:** Many online bookshops lack an engaging and intuitive user experience.\n**Impact:** Readers struggle to discover content and manage their collections efficiently.\n**Solution:** Moonlight Reads offers a modern bookstore experience with wishlist management, effortless cart handling, and a robust admin dashboard for monitoring inventory and orders.",
+      "Many online bookshops lack an engaging and intuitive user experience.\nReaders struggle to discover content and manage their collections efficiently.\nMoonlight Reads offers a modern bookstore experience with wishlist management, effortless cart handling, and a robust admin dashboard for monitoring inventory and orders.",
     tech: [
       "Node.js",
       "JavaScript",
