@@ -3,11 +3,11 @@
 
 export const ABOUT_ME = {
   name: "Adhil Unnikrishnan P",
-  title: "Backend Developer",
+  title: "Full Stack Developer",
   location: "Irinjalakuda, Thrissur, Kerala, India",
   email: "adhilunnikrishnanofficial@gmail.com",
   description: [
-    "Hi, I’m Adhil Unnikrishnan P, a backend developer with a strong focus on building reliable, scalable, and secure server-side applications. I enjoy solving complex problems and turning ideas into efficient APIs and systems.",
+    "Hi, I’m Adhil Unnikrishnan P, a Full Stack Developer with a strong focus on building reliable, scalable, and secure web applications. I enjoy solving complex problems and turning ideas into efficient systems.",
     "I’m passionate about developing secure authentication flows, robust RESTful APIs, and intelligent data-driven applications. I enjoy crafting backend systems that are scalable, maintainable, and built with clean, modern architecture.",
   ],
   profileImage: "/image.png", // Replace with your profile image
@@ -39,31 +39,85 @@ export const FORM_ENDPOINT = "https://formspree.io/f/your-form-id";
 
 export const SKILLS = {
   // Keep only the skills you want to showcase and remove the rest
-  frontend: [
+    languages: [
+    "JavaScript",
+    "TypeScript",
     "HTML",
     "CSS",
-    "JavaScript",
-    "TypeScript",
+    "SQL",
+
+  ],
+  frontend: [
     "React",
     "Next.js",
+    "TailwindCSS",
     "Bootstrap",
+    "Redux",
+    "jquery",
+    "Redux Toolkit",
+    "Framer Motion",
   ],
-  backend: ["Node.js", "Express.js", "Nest.js", "GraphQL"],
-  databases: ["MongoDB", "MySQL", "PostgreSQL", "Redis"],
-  languages: [
-    "JavaScript",
-    "TypeScript",
-  ],
-  cloudDevOps: ["AWS", "Docker", "Vercel", "GitHub Actions"],
+  
+  backend: [
+    "Node.js",
+    "Express.js",
+    "Nest.js",
+    "RESTful APIs", 
+    "JWT", 
+    "WebSocket", 
+    "graphql", 
+    "Socket.io"],
+
+  databases: [
+    "MongoDB", 
+    "PostgreSQL", 
+    "Redis", 
+    "Mongoose ODM", 
+    "Prisma ORM"],
+
+  cloudDevOps: [
+    "AWS", 
+    "Docker", 
+    "Nginx", 
+    "CI/CD", 
+    "GitHub Actions", 
+    "Vercel", 
+    "Render", 
+    "PM2", 
+    "Linux/Bash"],
+
+  testing: [
+    "Jest", 
+    "Playwright", 
+    "Postman", 
+    "Supertest"],
+    
   tools: [
-    "VS Code",
-    "Git",
-    "GitHub",
-    "GitLab",
-    "Postman",
-    "Figma",
-    "Jest",
-  ],
+    "Git", 
+    "Swagger", 
+    "Figma", 
+    "Adobe Photoshop", 
+    "Vite", 
+    "VS Code", 
+    "Jira", 
+    "Notion", 
+    "ESLint", 
+    "Prettier", 
+    "npm", 
+    "yarn", 
+    "pnpm"],
+
+    "Architecture & Concepts": [
+      "MVC", 
+      "SOLID Principles", 
+      "OOP", 
+      "Design Patterns", 
+      "Agile/Scrum", 
+      "System Design", 
+      "API Rate Limiting", 
+      "Load Balancing", 
+      "Data Structures & Algorithms"],  
+    
 };
 
 export const PROJECTS = [

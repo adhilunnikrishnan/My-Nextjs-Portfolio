@@ -11,14 +11,19 @@ const SKILL_ICONS: Record<string, string> = {
   "Vue.js": "vue",
   Angular: "angular",
   Redux: "redux",
+  "Redux Toolkit": "redux",
   TailwindCSS: "tailwind",
   Bootstrap: "bootstrap",
   Sass: "sass",
   Less: "less",
   jQuery: "jquery",
+  jquery: "jquery",
   "Node.js": "nodejs",
   "Express.js": "express",
   NestJS: "nestjs",
+  "Nest.js": "nestjs",
+  GraphQL: "graphql",
+  graphql: "graphql",
   Django: "django",
   Flask: "flask",
   "Spring Boot": "spring",
@@ -28,7 +33,9 @@ const SKILL_ICONS: Record<string, string> = {
   FastAPI: "fastapi",
   MongoDB: "mongodb",
   MySQL: "mysql",
-  PostgreSQL: "postgresql",
+  PostgreSQL: "postgres",
+  "Prisma ORM": "prisma",
+  "Prisma": "prisma",
   SQLite: "sqlite",
   Redis: "redis",
   Firebase: "firebase",
@@ -62,15 +69,32 @@ const SKILL_ICONS: Record<string, string> = {
   GitLab: "gitlab",
   Bitbucket: "bitbucket",
   Postman: "postman",
+  "Playwright": "playwright",
   Figma: "figma",
+  "Adobe Photoshop": "ps",
+  "Framer Motion": "framer",
+  "Socket.io": "socketio",
+  SQL: "mysql",
   Vite: "vite",
   Webpack: "webpack",
   Babel: "babel",
   Jest: "jest",
   Cypress: "cypress",
   Linux: "linux",
+  "Linux/Bash": "linux",
   Windows: "windows",
   MacOS: "apple",
+  Nginx: "nginx",
+  "ESLint": "eslint",
+  "Prettier": "prettier",
+  "npm": "npm",
+  "yarn": "yarn",
+  "pnpm": "pnpm",
+  "Jira": "jira",
+  "Notion": "notion",
+  "Render": "render",
+  "Swagger": "swagger",
+  "JWT": "jwt",
 };
 
 const SkillBadge = ({ skill }: { skill: string }) => (
@@ -101,7 +125,7 @@ const Skills = () => {
             style={{ borderColor: "hsl(var(--border) / 0.6)" }}
           >
             <h3 className="text-sm uppercase tracking-[0.35em] text-muted-foreground mb-3">
-              {"< " + key + " />"}
+              {"< " + key.replace(/([A-Z])/g, ' $1').replace(/\s+/g, ' ').trim() + " />"}
             </h3>
             <div className="flex flex-wrap gap-2">
               {skills.map((skill) => (
