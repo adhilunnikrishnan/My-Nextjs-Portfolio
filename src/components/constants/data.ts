@@ -160,7 +160,7 @@ export const PROJECTS = [
     ],
     link: "https://moonlight-reads.onrender.com/",
     github: "https://github.com/adhilunnikrishnan/Moonlight-Reads-Ecommerce-WebApp",
-    image: "https://images.unsplash.com/photo-1541692641319-981cc79ee10a?q=80&w=2070&auto=format&fit=crop",
+    image: "/moonlight.png",
     color: "#00FF94",
   },
 ];

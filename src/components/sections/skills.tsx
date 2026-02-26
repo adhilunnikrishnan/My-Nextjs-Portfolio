@@ -1,5 +1,4 @@
 import { SKILLS } from "@/components/constants/data";
-import Image from "next/image";
 
 const SKILL_ICONS: Record<string, string> = {
   HTML: "html",
@@ -35,7 +34,7 @@ const SKILL_ICONS: Record<string, string> = {
   MySQL: "mysql",
   PostgreSQL: "postgres",
   "Prisma ORM": "prisma",
-  "Prisma": "prisma",
+  Prisma: "prisma",
   SQLite: "sqlite",
   Redis: "redis",
   Firebase: "firebase",
@@ -69,7 +68,7 @@ const SKILL_ICONS: Record<string, string> = {
   GitLab: "gitlab",
   Bitbucket: "bitbucket",
   Postman: "postman",
-  "Playwright": "playwright",
+  Playwright: "playwright",
   Figma: "figma",
   "Adobe Photoshop": "ps",
   "Framer Motion": "framer",
@@ -85,33 +84,36 @@ const SKILL_ICONS: Record<string, string> = {
   Windows: "windows",
   MacOS: "apple",
   Nginx: "nginx",
-  "ESLint": "eslint",
-  "Prettier": "prettier",
-  "npm": "npm",
-  "yarn": "yarn",
-  "pnpm": "pnpm",
-  "Jira": "jira",
-  "Notion": "notion",
-  "Render": "render",
-  "Swagger": "swagger",
-  "JWT": "jwt",
+  ESLint: "eslint",
+  Prettier: "prettier",
+  npm: "npm",
+  yarn: "yarn",
+  pnpm: "pnpm",
+  Jira: "jira",
+  Notion: "notion",
+  Render: "render",
+  Swagger: "swagger",
+  JWT: "jwt",
 };
 
-const SkillBadge = ({ skill }: { skill: string }) => (
-  <span className="skill-chip">
-    {SKILL_ICONS[skill] && (
-      <Image
-        src={`https://skillicons.dev/icons?i=${SKILL_ICONS[skill]}`}
-        alt={`${skill} icon`}
-        width={16}
-        height={16}
-        className="w-4 h-4"
-        unoptimized
-      />
-    )}
-    {skill}
-  </span>
-);
+const SkillBadge = ({ skill }: { skill: string }) => {
+  const iconSlug = SKILL_ICONS[skill] || SKILL_ICONS[skill.toLowerCase()];
+  
+  return (
+    <span className="skill-chip">
+      {iconSlug && (
+        <img
+          src={`https://skillicons.dev/icons?i=${iconSlug}`}
+          alt={`${skill} icon`}
+          className="w-5 h-5 flex-shrink-0 object-contain"
+          loading="lazy"
+          style={{ minWidth: '20px', minHeight: '20px' }}
+        />
+      )}
+      <span>{skill}</span>
+    </span>
+  );
+};
 
 const Skills = () => {
   return (
@@ -128,7 +130,7 @@ const Skills = () => {
               {"< " + key.replace(/([A-Z])/g, ' $1').replace(/\s+/g, ' ').trim() + " />"}
             </h3>
             <div className="flex flex-wrap gap-2">
-              {skills.map((skill) => (
+              {Array.isArray(skills) && skills.map((skill) => (
                 <SkillBadge key={skill} skill={skill} />
               ))}
             </div>
