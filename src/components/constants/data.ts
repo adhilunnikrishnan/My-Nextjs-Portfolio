@@ -173,13 +173,15 @@ export const EXPERIENCE = [
     period: "Jul 2025 - Mar 2026",
     location: "Onsite",
     description:
-      "Working on full-stack development with a focus on backend engineering. Building secure RESTful APIs, implementing caching and session management with Redis, designing scalable architectures, and integrating relational and NoSQL databases. Gaining hands-on experience with containerization, API performance optimization, and modern JavaScript development workflows.",
+      "Engineered and deployed MERN stack applications, reducing load times by 30% through lazy loading and component optimization. Enforced JWT authentication and role-based access control for 140+ REST APIs using Node.js, Express.js, Nest.js, and TypeScript, ensuring zero unauthorized access. Designed and optimized MongoDB and PostgreSQL database schemas using indexing strategies and query optimization, improving query performance by 40%. ",
     skills: [
       "Node.js",
       "Express.js",
       "JavaScript",
       "TypeScript",
       "React",
+      "Next.js",
+      "Nest.js",
       "PostgreSQL",
       "MongoDB",
       "Redis",
