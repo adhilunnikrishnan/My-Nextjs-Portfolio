@@ -1,116 +1,122 @@
 import { SKILLS } from "@/components/constants/data";
+import Image from "next/image";
 
 const SKILL_ICONS: Record<string, string> = {
-  HTML: "html",
-  CSS: "css",
-  JavaScript: "js",
+  // Languages
+  "JavaScript (ES6+)": "js",
   TypeScript: "ts",
-  React: "react",
+  HTML5: "html",
+  CSS3: "css",
+  SQL: "mysql",
+
+  // Frontend
+  "React.js": "react",
   "Next.js": "nextjs",
-  "Vue.js": "vue",
-  Angular: "angular",
   Redux: "redux",
   "Redux Toolkit": "redux",
-  TailwindCSS: "tailwind",
-  Bootstrap: "bootstrap",
-  Sass: "sass",
-  Less: "less",
   jQuery: "jquery",
-  jquery: "jquery",
+  "Tailwind CSS": "tailwind",
+  Bootstrap: "bootstrap",
+  "Framer Motion": "framer",
+
+  // Backend
   "Node.js": "nodejs",
   "Express.js": "express",
-  NestJS: "nestjs",
   "Nest.js": "nestjs",
+  "RESTful APIs": "",
+  JWT: "",
+  WebSocket: "",
   GraphQL: "graphql",
-  graphql: "graphql",
-  Django: "django",
-  Flask: "flask",
-  "Spring Boot": "spring",
-  "Ruby on Rails": "rails",
-  Laravel: "laravel",
-  "ASP.NET": "dotnet",
-  FastAPI: "fastapi",
+  "Socket.io": "socketdotio",
+
+  // Databases
   MongoDB: "mongodb",
-  MySQL: "mysql",
-  PostgreSQL: "postgres",
-  "Prisma ORM": "prisma",
-  Prisma: "prisma",
-  SQLite: "sqlite",
+  PostgreSQL: "postgresql",
   Redis: "redis",
-  Firebase: "firebase",
-  Supabase: "supabase",
-  C: "c",
-  "C++": "cpp",
-  "C#": "cs",
-  Java: "java",
-  Python: "py",
-  Go: "go",
-  Rust: "rust",
-  Ruby: "ruby",
-  PHP: "php",
-  Kotlin: "kotlin",
-  Swift: "swift",
-  Dart: "dart",
-  Scala: "scala",
+  "Mongoose ODM": "mongodb",
+  "Prisma ORM": "prisma",
+
+  // Cloud & DevOps
   AWS: "aws",
-  Azure: "azure",
-  GCP: "gcp",
   Docker: "docker",
-  Kubernetes: "kubernetes",
-  Vercel: "vercel",
-  Netlify: "netlify",
-  Heroku: "heroku",
+  Nginx: "nginx",
+  "CI/CD": "",
   "GitHub Actions": "githubactions",
-  Jenkins: "jenkins",
-  "VS Code": "vscode",
+  Vercel: "vercel",
+  Render: "render",
+  PM2: "",
+  "Linux/Bash": "linux",
+
+  // Testing
+  Jest: "jest",
+  Playwright: "playwright",
+  Postman: "postman",
+  Supertest: "",
+
+  // Tools
   Git: "git",
   GitHub: "github",
-  GitLab: "gitlab",
-  Bitbucket: "bitbucket",
-  Postman: "postman",
-  Playwright: "playwright",
+  Swagger: "swagger",
   Figma: "figma",
-  "Adobe Photoshop": "ps",
-  "Framer Motion": "framer",
-  "Socket.io": "socketio",
-  SQL: "mysql",
+  "Adobe Photoshop": "adobephotoshop",
+  Cursor: "cursor",
   Vite: "vite",
-  Webpack: "webpack",
-  Babel: "babel",
-  Jest: "jest",
-  Cypress: "cypress",
-  Linux: "linux",
-  "Linux/Bash": "linux",
-  Windows: "windows",
-  MacOS: "apple",
-  Nginx: "nginx",
+  "VS Code": "vscode",
+  Jira: "jira",
+  Notion: "notion",
   ESLint: "eslint",
   Prettier: "prettier",
   npm: "npm",
   yarn: "yarn",
   pnpm: "pnpm",
-  Jira: "jira",
-  Notion: "notion",
-  Render: "render",
-  Swagger: "swagger",
-  JWT: "jwt",
+
+  // Architecture & Concepts (no icons)
+  MVC: "",
+  "SOLID Principles": "",
+  OOP: "",
+  "Design Patterns": "",
+  "Agile/Scrum": "",
+  "System Design": "",
+  "API Rate Limiting": "",
+  "Load Balancing": "",
+  "Data Structures & Algorithms": "",
 };
 
 const SkillBadge = ({ skill }: { skill: string }) => {
-  const iconSlug = SKILL_ICONS[skill] || SKILL_ICONS[skill.toLowerCase()];
-  
+  const iconSlug = SKILL_ICONS[skill];
+  if (!iconSlug) return <span className="skill-chip">{skill}</span>;
+
+  // Icons known to be missing in skillicons.dev but available in simpleicons.org
+  const isSimpleIcon = [
+    "render",
+    "swagger",
+    "nginx",
+    "notion",
+    "prettier",
+    "jira",
+    "eslint",
+    "socketdotio",
+    "framer",
+    "graphql",
+    "adobephotoshop",
+    "cursor",
+  ].includes(iconSlug);
+
+  const iconUrl = isSimpleIcon
+    ? `https://cdn.simpleicons.org/${iconSlug}` // branded colors
+    : `https://skillicons.dev/icons?i=${iconSlug}`;
+
   return (
     <span className="skill-chip">
-      {iconSlug && (
-        <img
-          src={`https://skillicons.dev/icons?i=${iconSlug}`}
-          alt={`${skill} icon`}
-          className="w-5 h-5 flex-shrink-0 object-contain"
-          loading="lazy"
-          style={{ minWidth: '20px', minHeight: '20px' }}
-        />
-      )}
-      <span>{skill}</span>
+      <Image
+        src={iconUrl}
+        alt={`${skill} icon`}
+        width={16}
+        height={16}
+        className="w-4 h-4"
+        unoptimized
+      />
+      {skill}
     </span>
   );
 };
@@ -130,7 +136,7 @@ const Skills = () => {
               {"< " + key.replace(/([A-Z])/g, ' $1').replace(/\s+/g, ' ').trim() + " />"}
             </h3>
             <div className="flex flex-wrap gap-2">
-              {Array.isArray(skills) && skills.map((skill) => (
+              {skills.map((skill) => (
                 <SkillBadge key={skill} skill={skill} />
               ))}
             </div>

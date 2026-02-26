@@ -8,16 +8,14 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.25-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-[![GitHub stars](https://img.shields.io/github/stars/adhilunnikrishnan/my-portfolio-nextjs?style=for-the-badge&logo=github)](https://github.com/adhilunnikrishnan/my-portfolio-nextjs/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/adhilunnikrishnan/my-portfolio-nextjs?style=for-the-badge&logo=github)](https://github.com/adhilunnikrishnan/my-portfolio-nextjs/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/adhilunnikrishnan/my-portfolio-nextjs?style=for-the-badge&logo=github)](https://github.com/adhilunnikrishnan/my-portfolio-nextjs/issues)
+[![GitHub stars](https://img.shields.io/github/stars/adhilunnikrishnan/My-Nextjs-Portfolio?style=for-the-badge&logo=github)](https://github.com/adhilunnikrishnan/My-Nextjs-Portfolio/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/adhilunnikrishnan/My-Nextjs-Portfolio?style=for-the-badge&logo=github)](https://github.com/adhilunnikrishnan/My-Nextjs-Portfolio/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/adhilunnikrishnan/My-Nextjs-Portfolio?style=for-the-badge&logo=github)](https://github.com/adhilunnikrishnan/My-Nextjs-Portfolio/issues)
 [![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE)
 
 **A modern, responsive, and feature-rich portfolio website built with Next.js 15, React 19, and TypeScript**
 
-
-
-[Report Bug](https://github.com/adhilunnikrishnan/my-portfolio-nextjs/issues) • [Request Feature](https://github.com/adhilunnikrishnan/my-portfolio-nextjs/issues)
+[Report Bug](https://github.com/adhilunnikrishnan/My-Nextjs-Portfolio/issues) • [Request Feature](https://github.com/adhilunnikrishnan/My-Nextjs-Portfolio/issues)
 
 </div>
 
@@ -171,8 +169,8 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/adhilunnikrishnan/my-portfolio-nextjs.git
-   cd my-portfolio-nextjs
+   git clone https://github.com/adhilunnikrishnan/My-Nextjs-Portfolio.git
+   cd My-Nextjs-Portfolio
    ```
 
 2. **Install dependencies**
@@ -242,7 +240,7 @@ Before you begin, ensure you have the following installed:
 ## 📁 Project Structure
 
 ```
-my-portfolio-nextjs/
+My-Nextjs-Portfolio/
 ├── public/
 │   ├── profile-image.jpg      # Profile image
 │   ├── profile-gif.gif        # Profile animated GIF
@@ -381,7 +379,7 @@ This project is licensed under the ISC License. See the [LICENSE](LICENSE) file 
 - 📱 Phone: +91 7907933057
 - 📄 Resume: [View Resume]()
 
-**Project Link:** [https://github.com/adhilunnikrishnan/my-portfolio-nextjs](https://github.com/adhilunnikrishnan/my-portfolio-nextjs)
+**Project Link:** [https://github.com/adhilunnikrishnan/My-Nextjs-Portfolio](https://github.com/adhilunnikrishnan/My-Nextjs-Portfolio)
 
 ---
 
@@ -401,7 +399,7 @@ This project is licensed under the ISC License. See the [LICENSE](LICENSE) file 
 
 <div align="center">
 
-**⭐ If you like this project, give it a star on [GitHub](https://github.com/adhilunnikrishnan/my-portfolio-nextjs)! ⭐**
+**⭐ If you like this project, give it a star on [GitHub](https://github.com/adhilunnikrishnan/My-Nextjs-Portfolio)! ⭐**
 
 Made with ❤️ by [Adhil Unnikirishnan P](https://github.com/adhilunnikrishnan)
 
