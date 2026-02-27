@@ -129,8 +129,8 @@ export default function RootLayout({
               ],
               sameAs: [
                 "https://github.com/adhilunnikrishnan",
-                "https://www.linkedin.com/in/adhilunnikrishnan/",
-                "https://leetcode.com/u/adhilunnikrishnan/",
+                "https://linkedin.com/in/adhilunnikrishnan",
+                "https://leetcode.com/u/adhilunnikrishnan",
               ],
             }),
           }}

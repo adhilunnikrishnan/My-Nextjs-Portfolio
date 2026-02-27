@@ -22,7 +22,7 @@ export const USER_NAMES = {
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/adhilunnikrishnan",
-  linkedin: "https://www.linkedin.com/in/adhilunnikrishnan/",
+  linkedin: "https://linkedin.com/in/adhilunnikrishnan/",
   // twitter: "https://twitter.com/your-twitter",
   leetcode: "https://leetcode.com/u/adhilunnikrishnan/",
   instagram: "",

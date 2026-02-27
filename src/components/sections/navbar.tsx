@@ -11,11 +11,13 @@ const STAGGER = 30; // Delay between each letter in milliseconds
 
 // Navigation items with their respective href values
 const navItems = [
+  { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Github", href: "#github" },
   { name: "Leetcode", href: "#leetcode" },
   { name: "Projects", href: "#projects" },
   { name: "Achievements", href: "#achievements" },
+  { name: "Experience", href: "#experience" },
   { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
 ];
@@ -45,7 +47,7 @@ export default function Navbar() {
           setActiveSection(visibleSection.target.id);
         }
       },
-      { threshold: 0.3 }
+      { rootMargin: "-20% 0px -40% 0px", threshold: 0 }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -78,7 +80,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-12 px-4">
           {/* Logo/Brand link */}
           <ScrollLink
-            href="/"
+            href="#header"
             className="text-lg font-semibold text-foreground cursor-pointer"
           >
             {ABOUT_ME.name?.split(" ")[0]}.
